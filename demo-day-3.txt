@@ -1,0 +1,49 @@
+import comp from comp.js
+
+class Filter extends component
+
+renderTemplate() {
+    return /*html*/`
+
+    <section class="filter-section">
+    <input class="filter" name="filter" placeholder"magnifying emoji"(makes it go inside)>
+    <section/>
+    `;
+}
+
+Filter.css 
+
+.filter {
+    padding: 10px;
+    border: 1px solid color;
+    bacground: color;
+    width: 200px;
+
+}
+
+.filter::before(or after) {
+    content 'unicode magenfying glass';
+    position: absolute;
+    top: 100px;
+
+}
+
+
+import App from './components/Filter.js
+
+
+add filter to App
+add cat stuff
+const filter = new Filter({
+    onFilter: filter => {
+        console.log
+    }
+});
+)};
+
+
+LAB
+
+
+
+
