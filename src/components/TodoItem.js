@@ -23,6 +23,7 @@ class TodoItem extends Component {
         if(todo.completed) {
             checked = 'checked';
         }
+
         return /*html*/`
             <li>
                 <input type="checkbox"${checked}>${todo.task}

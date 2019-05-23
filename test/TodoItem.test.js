@@ -6,7 +6,7 @@ QUnit.module('TodoItem');
 
 test('Creates TodoItem from template', (assert) => {
     // Arrange
-    const todos = {
+    const todo = {
         task: 'Learn templates',
         completed: true
     };
@@ -19,7 +19,7 @@ test('Creates TodoItem from template', (assert) => {
     `;
 
     // Act
-    const todoItem = new TodoItem({ todos });
+    const todoItem = new TodoItem({ todo });
     const todoItemDOM = todoItem.renderTemplate();
 
     // Assert
