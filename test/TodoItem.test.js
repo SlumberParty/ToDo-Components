@@ -14,6 +14,7 @@ test('Creates TodoItem from template', (assert) => {
     const expected = /*html*/`
         <li>
             <input type="checkbox"checked>Learn templates
+            <button>x</button>
         </li>
     `;
 
