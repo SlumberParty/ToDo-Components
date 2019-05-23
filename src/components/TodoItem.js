@@ -1,5 +1,4 @@
 import Component from './Component.js';
-import todos from '../data/todos.js';
 
 class TodoItem extends Component {
 
@@ -8,7 +7,7 @@ class TodoItem extends Component {
         const removeButton = todo.querySelector('button');
 
         const onRemove = this.props.onRemove;
-        const TodoToRemove = this.props.image;
+        const TodoToRemove = this.props.todo;
 
         removeButton.addEventListener('click', () => {
             onRemove(TodoToRemove);
@@ -27,7 +26,7 @@ class TodoItem extends Component {
         return /*html*/`
             <li>
                 <input type="checkbox"${checked}>${todo.task}
-                <button>x</button>
+                <button id="remove">x</button>
             </li>
         `;
     }

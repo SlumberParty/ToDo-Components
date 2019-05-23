@@ -46,7 +46,7 @@ class App extends Component {
     renderTemplate() {
         return /*html*/`
             <div>
-                <main>placeholder</main>
+                <main></main>
             </div>
         `;
     }

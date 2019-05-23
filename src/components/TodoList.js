@@ -8,7 +8,6 @@ class TodoList extends Component {
         const onRemove = this.props.onRemove;
 
         const todos = this.props.todos;
-        console.log(todos);
         todos.forEach(todo => {
             const todoItem = new TodoItem({ todo, onRemove });
             const todoItemDOM = todoItem.render();
