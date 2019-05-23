@@ -2,7 +2,7 @@ import Component from './Component.js';
 
 class TodoItem extends Component {
     renderTemplate() {
-        const todo = this.props.todo;
+        const todo = this.props.todos;
         let checked = '';
 
         if(todo.completed) {
