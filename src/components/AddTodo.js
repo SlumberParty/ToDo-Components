@@ -12,7 +12,7 @@ class AddTodo extends Component {
             const formData = new FormData(form);
             const newTodo = {
                 task: formData.get('link'),
-                completed: formData.get('completed')
+                completed: false
             };
 
             onAdd(newTodo);
